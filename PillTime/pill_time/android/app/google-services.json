@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "278252184988",
+    "project_id": "pastilleroapp-aa330",
+    "storage_bucket": "pastilleroapp-aa330.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:278252184988:android:ca8c46bc8886481e4bd459",
+        "android_client_info": {
+          "package_name": "com.example.pill_time"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3SN9JPYzgRZ8ZxDgw82wgnf99GzKh3QY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
