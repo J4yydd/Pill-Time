@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'medication_screen.dart';
 
 class PillboxScreen extends StatefulWidget {
   const PillboxScreen({Key? key}) : super(key: key);
@@ -141,6 +142,17 @@ class _PillboxScreenState extends State<PillboxScreen> {
                           subtitle: Text(
                             'Vinculado: ${pillbox['linkedAt'] != null ? 'Sí' : 'No'}',
                           ),
+                          trailing: const Icon(Icons.arrow_forward_ios),
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (_) => MedicationScreen(
+                                  pillboxId: pillbox['id'],
+                                ),
+                              ),
+                            );
+                          },
                         ),
                       );
                     },
